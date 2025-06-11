@@ -7,3 +7,4 @@ for (let i = 0; i < products.length; i++) {
     uniqueProducts.push(element);
   }
 }
+console.log(uniqueProducts); // Output: ["Laptop", "Phone", "Tablet"]
