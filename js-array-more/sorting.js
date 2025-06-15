@@ -10,3 +10,5 @@ Ascending order----> smaller to larger: [2, 3, 4, 6, 7, 8]
 Descending order----> larger to smaller : [8, 7, 6, 4, 3, 2]
 */
 
+const numbers_asc = numbers.sort()
+console.log(numbers_asc); // [2, 3, 4, 6, 7, 8]
