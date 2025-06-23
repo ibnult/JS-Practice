@@ -8,6 +8,19 @@ function evenSizedString(str){
         console.log("The string has an even number of characters.");
     } else {
         console.log("The string has an odd number of characters.");
+    
     }
 }
 evenSizedString("Hello, I am a string.");
+
+function doubleOrtTriple(num,doDouble){
+    if(doDouble=== true){
+        const result= num * 2;
+        return result;
+    } else {
+        const result= num * 3;
+        return result;
+    }
+}
+console.log(doubleOrtTriple(5,true));  // Output: 10
+console.log(doubleOrtTriple(5,false)); // Output: 15
