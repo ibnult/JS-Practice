@@ -24,3 +24,9 @@ function doubleOrtTriple(num,doDouble){
 }
 console.log(doubleOrtTriple(5,true));  // Output: 10
 console.log(doubleOrtTriple(5,false)); // Output: 15
+
+function numberOfElements(numbers){
+    const len=numbers.length;
+    return len;
+}
+console.log(numberOfElements([1,2,3,4,5])); // Output: 5
