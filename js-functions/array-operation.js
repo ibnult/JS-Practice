@@ -7,7 +7,12 @@
  * step-5: do the function tasks (step by step)
  */
 function sumOfNumbers (number){
-console.log(number);
+    let sum=0;
+for (const num of number) {
+    console.log(num);
+    sum+=num;
+}
+return sum;
 }
 const numbs=[1,2,3,4,5];
 const sum=sumOfNumbers(numbs);
