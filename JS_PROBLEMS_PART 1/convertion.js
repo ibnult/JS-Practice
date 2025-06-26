@@ -19,4 +19,21 @@ function inchToFeet2 (inch){
 const rihanHeight= inchToFeet(75);
 //console.log(rihanHeight);
 const rihanHeight2= inchToFeet2(75);
-console.log(rihanHeight2); 
+//console.log(rihanHeight2); 
+
+
+function mileToKm(mile){
+    const km= mile* 1.60934;
+    return km;
+}
+const mile = mileToKm(5);
+console.log(mile);
+
+
+function kmToMile(km){
+    const mile= km/1.60934;
+    return mile;
+}
+
+const km = kmToMile(8);
+console.log(km);
