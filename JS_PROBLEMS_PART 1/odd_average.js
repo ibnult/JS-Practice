@@ -5,7 +5,17 @@ function oddAverage(numbers) {
       odds.push(number);
     }
   }
-  console.log(odds)
+  // odds is the array that contains all the odd numbers
+  //console.log(odds)
+  let sum = 0;
+  for (const number of odds) {
+    sum += number;
+  }
+  const count= odds.length;
+  const avg=sum/ count;
+  return avg;
+
+
 }
 
 const numbers = [42, 13, 58, 65, 81, 96, 7];
