@@ -17,6 +17,7 @@ console.log("After swap: x =", x, ", y =", y);
 let m = 5;
 let n = 10;
 
+console.log("Using arithmetic operations:");
 console.log("Before swap: m =", m, ", n =", n);
 
 m = m + n; 
