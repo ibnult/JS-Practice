@@ -8,9 +8,11 @@ const products=[
 ]
 
 function getShoppingTotal(products) {
+    let total = 0;
     for (const product of products) {
-        console.log(product);
+        total += product.price;
     }
+    return total;
 }
-const total= getShoppingTotal(products);
+const total = getShoppingTotal(products);
 console.log('total ajk khosabe:', total);
