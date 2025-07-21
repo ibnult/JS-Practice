@@ -1,28 +1,23 @@
-function countLetters(text) {
-  if (typeof text !== "string") {
+function reverseOddWords(sentence) {
+  if (typeof sentence !== "string") {
     return "Invalid";
   }
 
-  const vowelsList = ['a', 'e', 'i', 'o', 'u'];
-  let vowels = 0;
-  let consonants = 0;
-
-  for (let char of text.toLowerCase()) {
-    if (char >= 'a' && char <= 'z') {
-      if (vowelsList.includes(char)) {
-        vowels++;
-      } else {
-        consonants++;
-      }
+  const words = sentence.split(" ");
+  const result = words.map((word, index) => {
+    if (index % 2 !== 0) {
+      return word.split("").reverse().join("");
+    } else {
+      return word;
     }
-  }
+  });
 
-  return { vowels, consonants };
+  return result.join(" ");
 }
 
+
 console.log(reverseOddWords("I love programming a lot"));
-console.log(countLetters("hello"));
-console.log(countLetters("Subah watches TikTok 24/7"));
-console.log(countLetters("AEIOU")); 
-console.log(countLetters(""));
-console.log(countLetters(42));
+console.log(reverseOddWords("Today is a good day"));
+console.log(reverseOddWords("This is another test case"));
+console.log(reverseOddWords("OnlyOne"));
+console.log(reverseOddWords(12345));
